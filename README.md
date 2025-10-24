@@ -14,9 +14,9 @@ This project applies the **Kalman Filter** to model and estimate the hidden stat
 7. Calculate the R square and plot
 
 # Data
-**Source：**[MacroMicro]  
-**Frequency：**Monthly  
-**Time Period：**2000-01-01 ~ 2025-08-31
+- **Source：** [MacroMicro]  
+- **Frequency：** Monthly  
+- **Time Period：** 2000-01-01 ~ 2025-08-31
 
 # Reference
 JULES H. van BINSBERGEN, RALPH S. J. KOIJEN(2010), Predictive Regressions: A Present-Value Approach, The Journal of Finance Vol. 65, No. 4 pp. 1439- 1471
