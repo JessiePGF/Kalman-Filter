@@ -5,7 +5,7 @@ The TAIEX, a market capitalization-weighted index, was introduced in 1967 by the
 This project applies the **Kalman Filter** to model and estimate the hidden state processes underlying the TAIEX return dynamics.
 
 # How to do
-1. Set starting values of hidden states based refernce.
+1. Set starting values of hidden states based on reference.
 2. Estimate parameters that maximize the likelihood function.
 3. Found out model is really sensitive to initial values - even small changes can push the MLE to very different parameters spaces.
 4. Use rt as a proxy for μt, and Δdt as a proxy for gt to run OLS regression.
