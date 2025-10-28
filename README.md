@@ -13,15 +13,15 @@ The TAIEX, a market capitalization-weighted index, was introduced in 1967 by the
 ### State transition
 $$
 \begin{aligned}
-\mu_{t+1} &= \delta_{0} + \delta_{1} (\mu_t - \delta_{0}) + \eta_{t+1}^{\mu} \\\\
-g_{t+1} &= \gamma_{0} + \gamma_{1} (g_{t} - \gamma_{0}) + \eta_{t+1}^{g}   
+\mu_{t+1} &= \delta_{0} + \delta_{1} (\mu_t - \delta_{0}) + q_{t+1}^{\mu} \\\\
+g_{t+1} &= \gamma_{0} + \gamma_{1} (g_{t} - \gamma_{0}) + q_{t+1}^{g}   
 \end{aligned}
 $$
 
 ### Measurement equation
 $$
 \begin{aligned}
-\Delta d_{t+1} &= g_{t} + \epsilon_{t+1}^{d} \\\\
+\Delta d_{t+1} &= g_{t} + w_{t+1}^{d} \\\\
 pd_{t} &= A - B_{1} (\mu_{t} - \delta_{0}) + B_{2} (g_t - \gamma_{0})   
 \end{aligned}
 $$
@@ -45,14 +45,13 @@ $$
 6. Rerun Kalman filter with updated parameters to estimate hidden processes μ and g
 7. Calculate the R square and plot
 
-
-# Data
-- **Source：** [MacroMicro]  
-- **Frequency：** Monthly  
-- **Time Period：** 2000-01-01 ~ 2025-08-31
-
-# Reference
-JULES H. van BINSBERGEN, RALPH S. J. KOIJEN(2010), Predictive Regressions: A Present-Value Approach, The Journal of Finance Vol. 65, No. 4 pp. 1439- 1471
+# Regression
+$$
+\begin{aligned}
+r_{t+1} &= \delata_{0} (1 - \delta_{1}) + \delta_{1} r_{t} + \eta_{t+1}^{\mu} \\\\
+\Delta d_{t+1} &= \gamma_{0} (1 - \gamma_{1}) + \gamma_{1} \Delta d_{t} + u_{t+1}^{g}
+\end{aligned}
+$$
 
 # Result
 - **R^2**  
