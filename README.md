@@ -41,17 +41,18 @@ $$
 2. Estimate parameters that maximize the likelihood function.
 3. Found out model is really sensitive to initial values - even small changes can push the MLE to very different parameters spaces.
 4. Use rt as a proxy for μt, and Δdt as a proxy for gt to run OLS regression.
-5. Use regression result as the initial values.
-6. Rerun Kalman filter with updated parameters to estimate hidden processes μ and g
-7. Calculate the R square and plot
+- **Regression**
 
-# Regression
 $$
 \begin{aligned}
 r_{t+1} &= \delta_{0} (1 - \delta_{1}) + \delta_{1} r_{t} + \eta_{t+1}^{\mu} \\\\
 \Delta d_{t+1} &= \gamma_{0} (1 - \gamma_{1}) + \gamma_{1} \Delta d_{t} + u_{t+1}^{g}
 \end{aligned}
 $$
+
+5. Use regression result as the initial values.
+6. Rerun Kalman filter with updated parameters to estimate hidden processes μ and g
+7. Calculate the R square and plot
 
 # Result
 - **R^2**  
