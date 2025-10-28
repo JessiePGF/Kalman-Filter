@@ -48,7 +48,7 @@ $$
 # Regression
 $$
 \begin{aligned}
-r_{t+1} &= \delata_{0} (1 - \delta_{1}) + \delta_{1} r_{t} + \eta_{t+1}^{\mu} \\\\
+r_{t+1} &= \delta_{0} (1 - \delta_{1}) + \delta_{1} r_{t} + \eta_{t+1}^{\mu} \\\\
 \Delta d_{t+1} &= \gamma_{0} (1 - \gamma_{1}) + \gamma_{1} \Delta d_{t} + u_{t+1}^{g}
 \end{aligned}
 $$
