@@ -12,22 +12,28 @@ The TAIEX, a market capitalization-weighted index, was introduced in 1967 by the
 # State space model
 ### State transition
 $$
-\mu_{t+1} = \delta_{0} + \delta_{1} (\mu_t - \delta_{0}) + \eta_{t+1}^{\mu} \\\\
-g_{t+1} = \gamma_{0} + \gamma_{1} (g_{t} - \gamma_{0}) + \eta_{t+1}^{g}   
+\begin{aligned}
+\mu_{t+1} &= \delta_{0} + \delta_{1} (\mu_t - \delta_{0}) + \eta_{t+1}^{\mu} \\\\
+g_{t+1} &= \gamma_{0} + \gamma_{1} (g_{t} - \gamma_{0}) + \eta_{t+1}^{g}   
+\end{aligned}
 $$
 
 ### Measurement equation
 $$
-\Delta d_{t+1} = g_{t} + \epsilon_{t+1}^{d} \\\\
-pd_{t} = A - B_{1} (\mu_{t} - \delta_{0}) + B_{2} (g_t - \gamma_{0})   
+\begin{aligned}
+\Delta d_{t+1} &= g_{t} + \epsilon_{t+1}^{d} \\\\
+pd_{t} &= A - B_{1} (\mu_{t} - \delta_{0}) + B_{2} (g_t - \gamma_{0})   
+\end{aligned}
 $$
 
 **Parameter**
 
 $$
-A = \frac{\kappa}{1 - \rho} + \frac{\gamma_{0} - \delta_{0}}{1 - \rho} \\\\
-B_{1} = \frac{1}{1 - \rho \delta_{1}} \\\\
-B_{2} = \frac{1}{1 - \rho \gamma_{1}}
+\begin{aligned}
+A &= \frac{\kappa}{1 - \rho} + \frac{\gamma_{0} - \delta_{0}}{1 - \rho} \\\\
+B_{1} &= \frac{1}{1 - \rho \delta_{1}} \\\\
+B_{2} &= \frac{1}{1 - \rho \gamma_{1}}
+\end{aligned}
 $$
 
 # How to do
